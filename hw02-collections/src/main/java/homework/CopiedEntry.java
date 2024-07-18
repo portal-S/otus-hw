@@ -2,7 +2,14 @@ package homework;
 
 import java.util.Map;
 
-record CopiedEntry(Customer key, String value) implements Map.Entry<Customer, String> {
+class CopiedEntry implements Map.Entry<Customer, String> {
+    private final Customer key;
+    private final String value;
+
+    CopiedEntry(Customer key, String value) {
+        this.key = key;
+        this.value = value;
+    }
 
     @Override
     public Customer getKey() {
