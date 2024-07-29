@@ -1,6 +1,7 @@
 rootProject.name = "ot-hw"
 include("hw01-gradle")
 include("hw02-collections")
+include("hw03-annotations")
 
 pluginManagement {
     val jgitver: String by settings
