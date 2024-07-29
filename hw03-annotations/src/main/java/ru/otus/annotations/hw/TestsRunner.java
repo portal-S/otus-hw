@@ -33,6 +33,9 @@ public class TestsRunner {
         System.out.println(result);
     }
 
+    // логика не особо расширяемая при добавлении новых аннотаций,
+    // тут сделал скидку на то что в рамках учебного проекта у нас их только 3
+    // в ином случае нужно строить что-то по типу пайплайна или цепочки ответственности
     private TestExecutionResult runTests(
         Class<?> clazz,
         List<Method> testMethods,
